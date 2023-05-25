@@ -1,0 +1,191 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&family=Rubik:ital,wght@0,300;0,700;1,400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0D0C0F;
+    height: 100vh;
+    width: 100%;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+}
+
+.nav_bar {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 6rem;
+    height: 120px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    z-index: 10;
+}
+
+.nav_logo {
+    font-size: 1.7rem;
+    letter-spacing: 3px;
+    font-weight: 800;
+    text-shadow: 0 0 15px rgb(26, 26, 26);
+}
+
+.nav_group {
+    display: flex;
+    font-size: 1.1rem;
+
+}
+
+
+.nav_op {
+    margin: 0 20px;
+    cursor: pointer;
+    text-shadow: 0 0 15px rgb(26, 26, 26)
+}
+
+.nav_op:hover {
+    transition: .2s;
+    opacity: 50%;
+}
+
+
+
+.nav_setting {
+    display: flex;
+    align-items: center;
+}
+
+.nav_setting>div {
+    cursor: pointer;
+}
+
+
+.nav_notification {
+    margin-right: 20px;
+}
+
+.nav_account {
+    display: flex;
+    align-items: center;
+}
+
+.nav_account>img {
+    margin-left: 10px;
+}
+
+/* ///////// */
+
+
+.action_post{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+    padding: 6rem 6rem;
+    display: flex;
+    color: #fff;
+}
+
+.post_mandalorian{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    width: 100%;
+    height: 100vh;
+    z-index: -2;
+    user-select: none;
+
+}
+
+.foco_post {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    z-index: -1;
+    background: linear-gradient(358.93deg, #0D0C0F 0.83%, rgba(13, 12, 15, 0.85) 28.55%, rgba(13, 12, 15, 0.26) 57.53%, rgba(13, 12, 15, 0.284314) 70.66%, #0D0C0F 103.18%);
+}
+
+
+.post_description{
+    font-family: 'Rubik', sans-serif;
+    max-width: 506px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+   justify-content: flex-end;
+   align-items: flex-start;
+   
+}
+
+.post_description>span{
+    font-weight: 400;
+    background-color: #000;
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.post_description>h2{
+    font-size: 2.5rem;
+}
+
+.post_description>h4{
+    color:  #9CA4AB;
+    font-weight: 200;
+    margin: 10px 0;
+}
+
+.post_btn{
+    margin: 25px 0;
+    display: flex;
+}
+.post_btn>div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-weight: 700;
+    user-select: none;
+    cursor: pointer;
+    margin-right: 25px;
+}
+.post_btn>div:hover{
+    transform: scale(1.1,1.1);
+    transition: .2s;
+    
+}
+
+.post_btn_playNow{
+    border-radius: 10px;
+    width: 146px;
+    height: 46px;
+    background-color: #00925D;
+}
+
+
+.post_btn_watchTrailer{
+    border-radius: 10px;
+    width: 175px;
+    height: 46px;
+    background-color: #28262D;
+}
+
+.post_btn_addWatchlist{
+    border-radius: 10px;
+    width: 175px;
+    height: 46px;
+    background: none;
+    border: 1px #fff solid;
+}
+
